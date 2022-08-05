@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-parent {
+  width: 100%;
+  min-height: 97vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-child {
+  min-width: 450px;
+  min-height: 500px;
+  box-shadow: inset;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo {
+  width:90%;
+  margin-top: 24px;
+}
+.shadow-inset {
+  box-shadow: inset 6px 6px 6px rgb(231, 230, 230), 6px 6px 6px rgb(231, 230, 230);
+}
+.edit-todo{
+  display: none;
+}
+.line-through {
+  text-decoration: line-through;
+  color: gray;
+}
+.todo-text {
+  box-shadow: inset -4px -4px 3px white, inset 1px 1px 5px rgb(116, 138, 171);
+  width: 67%;
+  height: 48px;
+  padding-left: 24px;
+  border: 1px solid transparent;
+  background-color: rgb(241, 243, 246);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.todo-text:focus {
+  box-shadow: -2px -2px 1px white,1px 1px 5px rgb(116, 138, 171);
+  outline: none;
+}
+.submit-todo-style {
+  width: 24%;
+  border: 1px solid transparent;
+  background-color: rgb(241, 243, 246);
+  height: 51.3px;
+  font-weight: bolder;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset -4px -4px 3px white, inset 1px 1px 5px rgb(116, 138, 171);
+}
+.todoDisplay {
+  margin-bottom: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-radius: 5px;
+  outline: outset #1976d2;
+  padding: 0px 15px;
+}
+.actions {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  color: #1976d2 !important;
 }
